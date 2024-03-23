@@ -1,0 +1,257 @@
+/* start global rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* small */
+@media (min-width: 768px) {
+    .container {
+        width: 750PX;
+    }
+}
+
+/* medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970PX;
+    }
+}
+
+/* large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* end global rules */
+/* start header */
+.header {
+    background-color: #f44336;
+    height: 50px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 0 15px black;
+    position: relative;
+    z-index: 2;
+}
+
+.header nav ul {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.header nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    width: fit-content;
+    height: 50px;
+    transition: 0.3s;
+}
+
+.header nav ul li .Active,
+.header nav ul li a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 3px;
+}
+
+/* End header */
+/* Start (start) section (: */
+
+.start {
+    background-color: #f44336;
+    height: 500px;
+    position: relative;
+    top: -10px;
+}
+
+.start .container {
+    text-align: center;
+    transform: translateY(75%);
+}
+
+.start .container h2 {
+    font-size: 40px;
+    font-weight: 400;
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.start .container p {
+    color: white;
+    padding: 20px;
+}
+
+.start .container input[type="button"] {
+    background-color: #020202;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.start .container input[type="button"]:hover {
+    background-color: #fff;
+    color: black;
+}
+
+/* End start section */
+
+.second {
+    background-color: #ffffff;
+    height: 500px;
+    position: relative;
+}
+
+.second .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.second .container .box h3 {
+    margin: 30px 20px 20px 50px;
+    font-weight: 300;
+    font-size: 40px;
+}
+
+.second .container .box .main {
+    margin: 30px 20px 20px 50px;
+    font-weight: 500;
+}
+
+.second .container .box .description {
+    margin: 30px 20px 20px 50px;
+    color: #777777;
+}
+
+.second .container .img img {
+    width: 250px;
+    margin-left: 50px;
+    margin-top: 50px;
+    position: absolute;
+    right: 25%;
+}
+
+/* End second */
+/* Start third section */
+.third {
+    background-color: #eee;
+    height: 500px;
+    position: relative;
+}
+
+.third .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.third .container .box h3 {
+    font-weight: 300;
+    font-size: 40px;
+    margin: 30px 10px 20px -100px;
+}
+
+.third .container .box .main {
+    margin: 30px 10px 20px -100px;
+    font-weight: 500;
+}
+
+.third .container .box .description {
+    color: #777777;
+    margin: 30px 10px 20px -100px;
+}
+
+.third .container .img img {
+    width: 250px;
+    margin-left: 50px;
+    margin-top: 50px;
+    position: absolute;
+    top: 30px;
+    left: 13%;
+}
+
+/* end third  */
+/* start quote */
+
+.quote {
+    height: 200px;
+    background-color: #666666;
+    position: relative;
+}
+
+.quote .container p {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+    color: white;
+    font-size: 20px;
+}
+
+/* End quote */
+/* start footer */
+.footer {
+    height: 300px;
+    position: relative;
+}
+
+.footer .container ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 40%;
+}
+
+.footer .container ul li {
+    width: 20px;
+    margin: 10px;
+    opacity: 70%;
+}
+
+.footer .container p {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 60%;
+    opacity: 70%;
+}
+
+.footer .container p a {
+    color: black;
+}
